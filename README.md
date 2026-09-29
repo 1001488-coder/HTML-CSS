@@ -1,4 +1,4 @@
 # HTML-CSS
 A coffee shop website.
 <br/>
-Author - Rasheduzzaman Shanto.
+Author - Rasheduzzaman (HTML-CSS).
