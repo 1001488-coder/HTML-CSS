@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bean Boutique — Events & Workshops</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍵Bean Boutique</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+          <li><a href="offers.html">Offers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Events & Workshops</h1>
+    <p class="lede">Join our curated tastings and hands-on brewing workshops.</p>
+
+    <div class="events-list">
+      <article class="event">
+        <h2>Intro to Pour-Over</h2>
+        <p class="meta">Mar 12, 2026 — 10:00 AM</p>
+        <p>Learn technique, grind, and brewing ratios for consistent pour-over coffee. Includes tasting and takeaway guide.</p>
+        <a href="#register" class="button">Register</a>
+      </article>
+
+      <article class="event">
+        <h3>Espresso Clinic</h3>
+        <p class="meta">Mar 24, 2026 — 6:00 PM</p>
+        <p>Hands-on session dialing in espresso on commercial equipment. For espresso enthusiasts and professionals.</p>
+        <a href="#register" class="button">Register</a>
+      </article>
+
+      <article class="event">
+        <h3>Roastery Tour</h3>
+        <p class="meta">Apr 3, 2026 — 11:00 AM</p>
+        <p>Behind-the-scenes tour of our small-batch roastery with cupping and Q&A.</p>
+        <a href="#register" class="button">Register</a>
+      </article>
+    </div>
+
+    <section id="register" class="registration container card">
+      <h2>Event Registration</h2>
+      <p>Reserve your place — spots are limited.</p>
+      <form action="#" method="post" class="event-form">
+        <div class="form-row">
+          <label for="first">First Name</label>
+          <input id="first" name="first" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="last">Last Name</label>
+          <input id="last" name="last" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="event-choice">Select Event</label>
+          <select id="event-choice" name="event">
+            <option>Intro to Pour-Over — Mar 12</option>
+            <option>Espresso Clinic — Mar 24</option>
+            <option>Roastery Tour — Apr 3</option>
+          </select>
+        </div>
+        <button type="submit" class="button primary">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <strong>Bean Boutique</strong>
+      </div>
+      <div class="legal">© 2026 Bean Boutique</div>
+    </div>
+  </footer>
+</body>
+</html>

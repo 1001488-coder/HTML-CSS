@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bean Boutique — Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍵Bean Boutique</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="cart.html" aria-current="page">Cart</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="offers.html">Offers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Your Basket</h1>
+    <p class="lede">Select items below to add them to your cart.</p>
+
+    <div class="cart-app">
+      <!-- Product selection inputs (checkbox toggles) -->
+      <div class="products">
+        <div class="product-row">
+          <input type="checkbox" id="p1" class="cart-toggle">
+          <label for="p1" class="product-select">
+            <img src="images/morning_blend.png" alt="Morning Blend">
+            <span>
+              <strong>Morning Blend</strong>
+              <span class="price">$14.00</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="product-row">
+          <input type="checkbox" id="p2" class="cart-toggle">
+          <label for="p2" class="product-select">
+            <img src="images/espresso_roast.jpg" alt="Espresso Roast">
+            <span>
+              <strong>Espresso Roast</strong>
+              <span class="price">$16.00</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="product-row">
+          <input type="checkbox" id="p3" class="cart-toggle">
+          <label for="p3" class="product-select">
+            <img src="images/single_origin.png" alt="Single Origin — Ethiopia">
+            <span>
+              <strong>Single Origin — Ethiopia</strong>
+              <span class="price">$18.00</span>
+            </span>
+          </label>
+        </div>
+
+        <div class="product-row">
+          <input type="checkbox" id="p4" class="cart-toggle">
+          <label for="p4" class="product-select">
+            <img src="images/precision_grinder.png" alt="Precision Grinder">
+            <span>
+              <strong>Precision Grinder</strong>
+              <span class="price">$120.00</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Cart summary reacts to checked inputs using CSS sibling selectors -->
+      <aside class="cart-summary">
+        <h2>Summary</h2>
+
+        <div class="summary-item item-1">Morning Blend — $14.00</div>
+        <div class="summary-item item-2">Espresso Roast — $16.00</div>
+        <div class="summary-item item-3">Single Origin — $18.00</div>
+        <div class="summary-item item-4">Precision Grinder — $120.00</div>
+
+        <div class="summary-total">
+          <strong>Total (visual demo)</strong>
+          <span>—</span>
+        </div>
+
+        <form class="checkout-form" action="#" method="post">
+          <h3>Checkout</h3>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="First & Last" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@coffee.com" required>
+          <button type="submit" class="button primary">Place Order</button>
+        </form>
+      </aside>
+    </div>
+    <p class="note small">Note: Orders are reviewed before processing. You’ll receive a confirmation after checkout.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <strong>Bean Boutique</strong>
+      </div>
+      <div class="legal">© 2026 Bean Boutique</div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,1 +1,146 @@
-<p>hello world</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bean Boutique — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍵Bean Boutique</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="offers.html">Offers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>Warm. Bold. Community.</h1>
+          <p>Hand-roasted blends & Brewing craft — Welcome to Bean Boutique.</p>
+          <a href="#signup" class="button primary">Get 10% off — Sign Up</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/warm_bold_community.webp"  alt="Pour-over coffee">
+        </div>
+      </div>
+    </section>
+
+    <section class="featured container">
+      <h2>Featured Products</h2>
+
+      <div class="slideshow" aria-hidden="false">
+        <div class="slides">
+          <div class="slide">
+            <img src="images/morning_blend.png" alt="Featured — Morning Blend">
+            <div class="slide-caption">
+              <h3>Morning Blend</h3>
+              <p>Bright citrus, honeyed finish.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/espresso_roast.jpg" alt="Featured — Espresso Roast">
+            <div class="slide-caption">
+              <h3>Espresso Roast</h3>
+              <p>Chocolate notes, robust crema.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="images/single_origin.png" alt="Featured — Single Origin">
+            <div class="slide-caption">
+              <h3>Single Origin</h3>
+              <p>Blueberry & floral aroma.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-cards">
+        <article class="card">
+          <img src="images/curated_equipment.png" alt="Brew equipment">
+          <h3>Curated Equipment</h3>
+          <p>From hand grinders to precision scales — tools we trust.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/events_&_workshops.png" alt="Community table">
+          <h3>Events & Workshops</h3>
+          <p>Monthly tastings, barista courses, and community gatherings.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/subscriptions_fresh_beans_delivered.png" alt="Subscription bags">
+          <h3>Subscriptions</h3>
+          <p>Fresh beans delivered — flexible plans tailored to you.</p>
+        </article>
+      </div>
+    </section>
+
+    <aside class="container widget-area">
+      <!-- Plugin/Widget 1: Social Media Feed Placeholder -->
+      <div class="widget social-widget">
+        <h4>Social Feed</h4>
+        <div class="feed-post">
+          <img src="images/new_roast_release_sunrise_blend.png" alt="">
+          <div class="post-meta">
+            <strong>@beanboutique</strong>
+            <span>New roast release: Sunrise Blend ☕️</span>
+          </div>
+        </div>
+        <div class="feed-post">
+          <img src="images/workshop_spots_open_for_march.png" alt="">
+          <div class="post-meta">
+            <strong>@beanboutique</strong>
+            <span>Workshop spots open for March.</span>
+          </div>
+        </div>
+        <a class="widget-link" href="events.html">See events →</a>
+      </div>
+    </aside>
+
+    <!-- Modal signup using :target -->
+    <div id="signup" class="modal">
+      <div class="modal-content">
+        <a class="close" href="#!">&times;</a>
+        <h2>Subscribe & Save 10%</h2>
+        <p>Join our list for a members-only discount and brew tips.</p>
+        <form action="offers.html" method="get" class="signup-form">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@coffee.com">
+          <button type="submit" class="button">Claim 10% Off</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <strong>Bean Boutique</strong>
+        <small>Hand-roasted. Community-first.</small>
+      </div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="offers.html">Subscriptions</a></li>
+        </ul>
+      </nav>
+      <div class="legal">© 2026 Bean Boutique — All rights reserved</div>
+    </div>
+  </footer>
+</body>
+</html>
